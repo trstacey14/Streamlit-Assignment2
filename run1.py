@@ -100,7 +100,7 @@ elif app_mode =='Prediction':
         file.close()
    
    
-        loaded_model = pickle.load(open('RF.sav', 'rb'))
+        loaded_model = pickle.load(open('RF (2).sav', 'rb'))
         prediction = loaded_model.predict(single_sample)
         if prediction[0] == 0 :
             st.error(
